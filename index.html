@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/682191b38f.js" crossorigin="anonymous"></script>
+</head>
+<body class="blurred">
+    
+    <!-- --------------------------------Header element------------------------ -->
+    <!-- <header>
+
+        <div class="input">
+            <input id="place--input" type="text" placeholder="E.g London,Dublin...">
+            <button class="btn"><i id="search--icon" class="fa-sharp fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+        </div>
+
+                
+        <button class="location--btn"><i class="fa-regular fa-solid fa-location-dot" style="color: white;"></i> Use Current Location</button>
+
+    </header> -->
+
+
+    <!----------------------------------- Container-section--------------------- -->
+    <div class="container">
+        <div class="left--section">
+            <div class="place--description--section">
+                <!-- place description of left section -->
+            
+                <div class="place--description--left">
+                    <!-- place details -->
+                    <!-- <div class="place--details">
+                        <h2>Madrid</h2>
+                        <p>USA</p>
+                    </div> -->
+            
+                    <!-- temperature details -->
+                    <div class="temp--details">
+                        <h1><span id="temp--value">31</span>°</h1>
+                        <p><span id="temp--description--value">Mostly Cloudy</span></p>
+                    </div>
+                </div>
+                <!-- section for icon -->
+                <div class="place--description--right">
+                    <img id="main--icon" src="./images/0.png" alt="Icon" srcset="">
+                </div>
+            </div>
+
+            <div class="todays--forecast">
+                <p> Today's Forecast </p>
+                <!-- Parent container that contains all the weather forecast items -->
+                <div class="today--items">
+            
+            
+            
+            
+                    <!-- Today item section -->
+                    <div class="today--item">
+                        <div class="time">
+                            <span class="today--item--time">17:30</span>
+                        </div>
+            
+                        <div class="today--icon">
+                            <img src="./images/45.png" alt="">
+                        </div>
+            
+                        <div class="today--temp">
+                            <span class="today--temp--value">25</span>°
+                        </div>
+                    </div>
+            
+            
+                    <!-- Today item section -->
+                    <div class="today--item">
+                        <div class="time">
+                            <span class="today--item--time">17:30</span>
+                        </div>
+            
+                        <div class="today--icon">
+                            <img src="./images/45.png" alt="">
+                        </div>
+            
+                        <div class="today--temp">
+                            <span class="today--temp--value">25</span>°
+                        </div>
+                    </div>
+            
+            
+                    <!-- Today item section -->
+                    <div class="today--item">
+                        <div class="time">
+                            <span class="today--item--time">17:30</span>
+                        </div>
+            
+                        <div class="today--icon">
+                            <img src="./images/45.png" alt="">
+                        </div>
+            
+                        <div class="today--temp">
+                            <span class="today--temp--value">25</span>°
+                        </div>
+                    </div>
+            
+            
+                    <!-- Today item section -->
+                    <div class="today--item">
+                        <div class="time">
+                            <span class="today--item--time">17:30</span>
+                        </div>
+            
+                        <div class="today--icon">
+                            <img src="./images/45.png" alt="">
+                        </div>
+            
+                        <div class="today--temp">
+                            <span class="today--temp--value">25</span>°
+                        </div>
+                    </div>
+            
+            
+                    <!-- Today item section -->
+                    <div class="today--item">
+                        <div class="time">
+                            <span class="today--item--time">17:30</span>
+                        </div>
+            
+                        <div class="today--icon">
+                            <img src="./images/45.png" alt="">
+                        </div>
+            
+                        <div class="today--temp">
+                            <span class="today--temp--value">25</span>°
+                        </div>
+                    </div>
+            
+            
+                    <!-- Today item section -->
+                    <div id="last--item" class="today--item">
+                        <div class="time">
+                            <span class="today--item--time">17:30</span>
+                        </div>
+            
+                        <div class="today--icon">
+                            <img src="./images/45.png" alt="">
+                        </div>
+            
+                        <div class="today--temp">
+                            <span class="today--temp--value">25</span>°
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="other--forecast--items">
+                <!-- real---feel -->
+                <div class="real--feel other--forecast--item">
+                    <p>Real Feel</p>
+                    <h2><span class="real--feel--value">30</span>°</h2>
+                </div>
+                <!-- wind-speed -->
+                <div class="wind--speed other--forecast--item">
+                    <p>Wind</p>
+                    <h2><span class="wind--value">3</span>km/h</h2>
+                </div>
+            
+                <!-- uv--index -->
+                <div class="uv--index other--forecast--item">
+                    <p>UV index</p>
+                    <h2><span class="uv--value">3</span></h2>
+                </div>
+            
+                <!-- SunRise -->
+                <div class="sunrise other--forecast--item">
+                    <p>Sunrise</p>
+                    <h2><span class="sunrise--value">3</span></h2>
+                </div>
+            
+                <!-- SunSet -->
+                <div class="sunset other--forecast--item">
+                    <p>Sunset</p>
+                    <h2><span class="sunset--value">7</span></h2>
+                </div>
+            
+            
+            
+            </div>
+
+        </div>
+
+
+
+        <!-- right-section -->
+        <div class="right--section">
+            <p>7 day Forecast</p>
+        
+            <div class="forceast--items">
+        
+                <!-- forecast-item -->
+                <div class="forecast--item">
+                    <p class="forecast--item-day">Today</p>
+        
+                    <div class="forecast--item-weather-description">
+                        <img src="./images/0.png" alt="">
+                        <p id="weather--description">Sunny</p>
+                    </div>
+        
+                    <div class="temp--values">
+                        <span class="temp--values-max">36</span><span>°</span>
+                        <span>/</span>
+                        <span class="temp--values-min">22</span><span>°</span>
+                    </div>
+                </div><!-- forecast-item -->
+                <div class="forecast--item">
+                    <p class="forecast--item-day">Today</p>
+                
+                    <div class="forecast--item-weather-description">
+                        <img src="./images/0.png" alt="">
+                        <p id="weather--description">Sunny</p>
+                    </div>
+                
+                    <div class="temp--values">
+                        <span class="temp--values-max">36</span><span>°</span>
+                        <span>/</span>
+                        <span class="temp--values-min">22</span><span>°</span>
+                    </div>
+                </div>
+        
+                <!-- forecast-item -->
+                <div class="forecast--item">
+                    <p class="forecast--item-day">Today</p>
+        
+                    <div class="forecast--item-weather-description">
+                        <img src="./images/0.png" alt="">
+                        <p id="weather--description">Sunny</p>
+                    </div>
+        
+                    <div class="temp--values">
+                        <span class="temp--values-max">36</span><span>°</span>
+                        <span>/</span>
+                        <span class="temp--values-min">22</span><span>°</span>
+                    </div>
+                </div>
+        
+                <!-- forecast-item -->
+                <div class="forecast--item">
+                    <p class="forecast--item-day">Today</p>
+                
+                    <div class="forecast--item-weather-description">
+                        <img src="./images/0.png" alt="">
+                        <p id="weather--description">Sunny</p>
+                    </div>
+                
+                    <div class="temp--values">
+                        <span class="temp--values-max">36</span><span>°</span>
+                        <span>/</span>
+                        <span class="temp--values-min">22</span><span>°</span>
+                    </div>
+                </div>
+        
+            <!-- forecast-item -->
+            <div class="forecast--item">
+                <p class="forecast--item-day">Today</p>
+            
+                <div class="forecast--item-weather-description">
+                    <img src="./images/0.png" alt="">
+                    <p id="weather--description">Sunny</p>
+                </div>
+            
+                <div class="temp--values">
+                    <span class="temp--values-max">36</span><span>°</span>
+                    <span>/</span>
+                    <span class="temp--values-min">22</span><span>°</span>
+                </div>
+            </div>
+        
+                <!-- forecast-item -->
+                <div class="forecast--item">
+                    <p class="forecast--item-day">Today</p>
+                
+                    <div class="forecast--item-weather-description">
+                        <img src="./images/0.png" alt="">
+                        <p id="weather--description">Sunny</p>
+                    </div>
+                
+                    <div class="temp--values">
+                        <span class="temp--values-max">36</span><span>°</span>
+                        <span>/</span>
+                        <span class="temp--values-min">22</span><span>°</span>
+                    </div>
+                </div>
+        
+                <!-- forecast-item -->
+                <div id="last--item" class="forecast--item">
+                    <p class="forecast--item-day">Today</p>
+                
+                    <div class="forecast--item-weather-description">
+                        <img src="./images/0.png" alt="">
+                        <p id="weather--description">Sunny</p>
+                    </div>
+                
+                    <div class="temp--values">
+                        <span class="temp--values-max">36</span><span>°</span>
+                        <span>/</span>
+                        <span class="temp--values-min">22</span><span>°</span>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+        
+
+
+    </div>
+
+
+ 
+
+    <script src="app.js"></script>
+</body>
+</html>
